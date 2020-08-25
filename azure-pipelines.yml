@@ -30,3 +30,8 @@ steps:
       echo 'Hello world'
       
       sudo find . -print | grep -i '.*[.]xml'
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'JaCoCo'
+    summaryFileLocation: 'TEST-burrows.apps.example.template.util.PlayServicesUtilsTest.xml'
+    pathToSources: './build/test-results/testDebugUnitTest'
