@@ -35,8 +35,7 @@ steps:
 
       sudo find . -print | grep -i '.*[.]html'
 
-      echo 'Default Working Directory'
-      echo ${System.DefaultWorkingDirectory}
+      
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo'
