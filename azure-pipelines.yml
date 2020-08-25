@@ -39,4 +39,4 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo'
-    summaryFileLocation: './build/test-results/testDebugUnitTest/TEST-burrows.apps.example.template.util.PlayServicesUtilsTest.xml'
+    summaryFileLocation: './build/reports/jacoco/jacocoDebugReport/jacocoDebugReport.xml'
