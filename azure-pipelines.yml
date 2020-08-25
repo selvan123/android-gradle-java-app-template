@@ -40,3 +40,5 @@ steps:
   inputs:
     codeCoverageTool: 'JaCoCo'
     summaryFileLocation: './build/reports/jacoco/jacocoDebugReport/jacocoDebugReport.xml'
+    reportDirectory: './build/reports/jacoco/jacocoDebugReport/html'
+    
