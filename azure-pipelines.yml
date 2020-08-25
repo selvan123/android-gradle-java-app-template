@@ -1,4 +1,8 @@
 # Gradle
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'JaCoCo'
+    summaryFileLocation: './build/test-results/testDebugUnitTest/TEST-burrows.apps.example.template.util.PlayServicesUtilsTest.xml'
 # Build your Java project and run tests with Gradle using a Gradle wrapper script.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
@@ -39,5 +43,4 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo'
-    summaryFileLocation: '${System.DefaultWorkingDirectory}/**/test-results/testDebugUnitTest/TEST-burrows.apps.example.template.util.PlayServicesUtilsTest.xml'
-    reportDirectory: '${System.DefaultWorkingDirectory}/**/test-results/testDebugUnitTest/html'
+    summaryFileLocation: './build/test-results/testDebugUnitTest/TEST-burrows.apps.example.template.util.PlayServicesUtilsTest.xml'
